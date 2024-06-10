@@ -31,8 +31,10 @@ function Product() {
         ) : (
           <>
             <div className="product">
-              {products.map((item) => (
-                <ProductItem item={item} key={item.id} />
+              {products.map((item, index) => (
+                <>
+                  <ProductItem item={item} key={index} />
+                </>
               ))}
             </div>
           </>

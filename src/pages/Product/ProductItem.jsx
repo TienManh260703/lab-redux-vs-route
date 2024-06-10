@@ -4,7 +4,6 @@ import { addToCart, updateQuantity } from "../../actions/cart";
 
 function ProductItem(props) {
   const { item } = props;
-
   const dispatch = useDispatch();
 
   const cart = useSelector((state) => state.cartReducer);
@@ -41,7 +40,7 @@ function ProductItem(props) {
 }
 ProductItem.propTypes = {
   item: PropTypes.shape({
-    id: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
     thumbnail: PropTypes.string,
     title: PropTypes.string,
     price: PropTypes.number,

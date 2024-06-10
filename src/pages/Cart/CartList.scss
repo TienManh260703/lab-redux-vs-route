@@ -1,0 +1,14 @@
+.cart__top {
+  display: flex;
+  justify-content: space-between;
+  button {
+    color: red;
+    width: 100px;
+    height: 20px;
+  }
+}
+
+.cart__total {
+  display: flex;
+  justify-content: end;
+}
